@@ -68,10 +68,7 @@ const productosArray = [
 ];
 
 // Crea una lista de los nombres de los productos para usarla en el Prompt
-const nombreProductos = []
-for(const item of productosArray){
-    nombreProductos.push(item.nombre)
-}
+const nombreProductos = productosArray.map((item) => item.nombre);
 
 // Le pedimos al usuario que ingrese un producto de la lista
 // Corrección de PreEntrega1 agregar toLowerCase para validar mejor el input
